@@ -1,6 +1,6 @@
-# import Pkg
-# Pkg.activate(".") # Activate the project environment in the current directory
-# Pkg.instantiate() # Install dep pacakges
+import Pkg
+Pkg.activate(".") # Activate the project environment in the current directory
+Pkg.instantiate() # Install dep pacakges
 
 # Load packages
 using CUDA
