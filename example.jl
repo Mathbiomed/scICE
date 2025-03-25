@@ -59,4 +59,4 @@ panel_2 = scLENS.plot_embedding(sclens_embedding,label_out[!,"l_$n_clusters"])
 save("out/umap_dist_with_label$n_clusters.png",panel_2)
 
 # Save output as an AnnData
-scLENS.save_anndata("out/test.h5ad",sclens_embedding)
+scLENS.save_anndata("out/test.h5ad",sclens_embedding,device_=cur_dev)
