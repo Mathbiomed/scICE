@@ -884,13 +884,13 @@ function get_denoised_df(out_ours;device_="gpu")
     odf
 end
 
-function save_anndata(fn,input)
+function save_anndata(fn,input;device_="gpu")
     out_ldf = if haskey(input,:l_df)
         input[:l_df]
     else
         DataFrame(:cell => input[:cell_id])
     end
-    denoised_df = scLENS.get_denoised_df(input)
+    denoised_df = scLENS.get_denoised_df(input,device_=device_)
 
     tmp_adata = if haskey(input,:umap)
         if haskey(input,:ic)
