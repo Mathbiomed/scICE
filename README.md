@@ -9,7 +9,7 @@ It includes data preprocessing, embedding, clustering, and visualization of resu
 
 To run this project, you will need the following:
 
--   **Julia**: Version 1.6 or higher recommended. Tested on Julia 1.10.4.
+-   **Julia**: Version 1.6 or higher recommended. Tested on Julia 1.11.4.
 -   **Python**: Required for certain dependencies. Tested with Python 3.12.3.
 -   **Operating Systems**: Tested on Windows 11 and Ubuntu 22.04.
 -   **Key Julia Packages**: `CUDA`, `CSV`, `scLENS`, `CairoMakie` (These will be automatically installed via `Pkg.instantiate()` from the project environment).
@@ -24,7 +24,7 @@ To run this project, you will need the following:
 
 1.  **Clone the repository**:
     ```bash
-    git clone [https://github.com/Mathbiomed/scICE](https://github.com/Mathbiomed/scICE)
+    git clone https://github.com/Mathbiomed/scICE
     cd scICE
     ```
 
@@ -129,7 +129,7 @@ The following steps describe how to use this project to analyze single-cell data
 
 ### Expected Runtime (Example Data)
 
-Running the `example.jl` script with the provided sample data (`data/Z8eq.csv.gz`, ~10,000 cells):
+Running the `example.jl` script with the provided sample data with ~10,000 cells:
 
 -   **scLENS embedding (`sclens` function):** Approximately **2-5 minutes**.
 -   **scICE clustering (`clustering!` function):** Approximately **10-15 minutes**.
