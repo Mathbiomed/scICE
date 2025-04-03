@@ -22,8 +22,8 @@ else
 end
 
 # Load the compressed CSV file into a dataframe
-# ndf = scLENS.read_file("data/Z8eq.csv.gz")
-ndf = scLENS.read_file("data/ZhengMix_2410.jld2")
+ndf = scLENS.read_file("data/Z8eq.csv.gz")
+# ndf = scLENS.read_file("data/ZhengMix_2410.jld2")
 # Perform data preprocessing
 pre_df = scLENS.preprocess(ndf)
 # Create an embedding using scLENS
