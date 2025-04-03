@@ -54,7 +54,7 @@ label_out = get_rlabel!(sclens_embedding)
 CSV.write("out/consistent_labels.csv",label_out)
 
 # Set the number of clusters and visualize with cluster labels
-n_clusters = 9
+n_clusters = 7
 panel_2 = scLENS.plot_embedding(sclens_embedding,label_out[!,"l_$n_clusters"])
 save("out/umap_dist_with_label$n_clusters.png",panel_2)
 
